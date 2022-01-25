@@ -1,0 +1,12 @@
+.bgColor {
+    background-color: #FCDC00;
+}
+
+h5 {
+    background-color: black;
+    font-size: 20px;
+    color: #FCDC00;
+    padding: 10px 20px;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
