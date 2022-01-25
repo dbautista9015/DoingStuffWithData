@@ -10,3 +10,19 @@ h5 {
     letter-spacing: 10px;
     font-weight: 600;
 }
+
+h1 {
+    font-size: 90px;
+    letter-spacing: -5px;
+    line-height: unset;
+    font-weight: bolder;
+    
+}
+
+h3 {
+    font-size: 30px;
+    letter-spacing: -2.0px;
+    box-sizing: inherit;
+    text-align: center;
+    font-weight: bold;
+}
