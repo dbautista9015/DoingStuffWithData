@@ -1,6 +1,6 @@
 import Table from "../scripts/CreateTable.js"
 
- setTimeout(Table(), '4000');
+ setTimeout(Table(), '8000');
 
  
  
