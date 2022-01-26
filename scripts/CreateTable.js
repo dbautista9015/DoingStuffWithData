@@ -2,7 +2,8 @@ import Sorting from "../scripts/sort.js";
 
 export default function Table() {
 
-    fetch("../data/data.json")
+    // ../data/data.json
+    fetch("data/data.json")
     .then(res => res.json())
     .then(data => {
         let people;
