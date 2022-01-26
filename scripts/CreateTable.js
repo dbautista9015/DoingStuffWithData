@@ -32,19 +32,23 @@ export default function Table() {
 
         let thHead2 = document.createElement('th');
         thHead2.className = 'th-sm';
-        thHead2.textContent = 'Name'
+        thHead2.textContent = 'First Name'
 
         let thHead3 = document.createElement('th');
         thHead3.className = 'th-sm';
-        thHead3.textContent = 'Email'
+        thHead3.textContent = 'Last Name'
 
         let thHead4 = document.createElement('th');
         thHead4.className = 'th-sm';
-        thHead4.textContent = 'Height';
+        thHead4.textContent = 'Email'
 
         let thHead5 = document.createElement('th');
         thHead5.className = 'th-sm';
-        thHead5.textContent = 'Age';
+        thHead5.textContent = 'Height';
+
+        let thHead6 = document.createElement('th');
+        thHead6.className = 'th-sm';
+        thHead6.textContent = 'Age';
 
 
         //Insert table to body
@@ -57,6 +61,7 @@ export default function Table() {
         trHead.appendChild(thHead3);
         trHead.appendChild(thHead4);
         trHead.appendChild(thHead5);
+        trHead.appendChild(thHead6);
 
         //tbody element
         let tbody = document.createElement('tbody');
@@ -71,13 +76,15 @@ export default function Table() {
             let td1 = document.createElement('td');
             td1.textContent = people[i].Id;
             let td2 = document.createElement('td'); 
-            td2.textContent = people[i].FirstName + " " + people[i].LastName;
+            td2.textContent = people[i].FirstName;
             let td3 = document.createElement('td'); 
-            td3.textContent = people[i].Email;
+            td3.textContent = people[i].LastName;
             let td4 = document.createElement('td'); 
-            td4.textContent = people[i].Height;
+            td4.textContent = people[i].Email;
             let td5 = document.createElement('td');
-            td5.textContent = people[i].Age;
+            td5.textContent = people[i].Height;
+            let td6 = document.createElement('td');
+            td6.textContent = people[i].Age;
 
             
             tbody.appendChild(tRow);
@@ -86,7 +93,7 @@ export default function Table() {
             tRow.appendChild(td3);
             tRow.appendChild(td4);
             tRow.appendChild(td5);
-
+            tRow.appendChild(td6);
 
         }
 
@@ -99,13 +106,15 @@ export default function Table() {
         let thFoot1 = document.createElement('th');
         thFoot1.textContent = "Id";
         let thFoot2 = document.createElement('th');
-        thFoot2.textContent = "Name";
+        thFoot2.textContent = "First Name";
         let thFoot3 = document.createElement('th');
-        thFoot3.textContent = "Email";
+        thFoot3.textContent = "Last Name";
         let thFoot4 = document.createElement('th');
-        thFoot4.textContent = "Height";
+        thFoot4.textContent = "Email";
         let thFoot5 = document.createElement('th');
-        thFoot5.textContent = "Age";
+        thFoot5.textContent = "Height";
+        let thFoot6 = document.createElement('th');
+        thFoot6.textContent = "Age";
 
         tfoot.appendChild(trFoot);
 
@@ -114,6 +123,7 @@ export default function Table() {
         trFoot.appendChild(thFoot3);
         trFoot.appendChild(thFoot4);
         trFoot.appendChild(thFoot5);
+        trFoot.appendChild(thFoot6);
 
         Sorting();
 
