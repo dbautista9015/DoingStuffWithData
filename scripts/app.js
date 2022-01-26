@@ -1,3 +1,3 @@
 import Table from "../scripts/CreateTable.js"
 
-Table();
+ setTimeout(Table(), '4000');
