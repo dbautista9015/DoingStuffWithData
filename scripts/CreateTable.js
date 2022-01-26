@@ -1,4 +1,4 @@
-
+import Sorting from "../scripts/sort.js";
 
 export default function Table() {
 
@@ -114,6 +114,10 @@ export default function Table() {
         trFoot.appendChild(thFoot4);
         trFoot.appendChild(thFoot5);
 
+        Sorting();
+
     })
+
+    
 }
 
