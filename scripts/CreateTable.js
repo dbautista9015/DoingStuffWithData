@@ -61,6 +61,7 @@ export default function Table() {
         let tbody = document.createElement('tbody');
         
         table.appendChild(tbody);
+
         // Create multiple tr in tbody
         for (let i = 0; i < people.length; i++) {
 
@@ -88,8 +89,30 @@ export default function Table() {
 
         }
 
+        //tFoot
+        let tfoot = document.createElement('tfoot');
+        table.appendChild(tfoot);
 
+        let trFoot = document.createElement('tr');
+        
+        let thFoot1 = document.createElement('th');
+        thFoot1.textContent = "Id";
+        let thFoot2 = document.createElement('th');
+        thFoot2.textContent = "Name";
+        let thFoot3 = document.createElement('th');
+        thFoot3.textContent = "Email";
+        let thFoot4 = document.createElement('th');
+        thFoot4.textContent = "Height";
+        let thFoot5 = document.createElement('th');
+        thFoot5.textContent = "Age";
 
+        tfoot.appendChild(trFoot);
+
+        trFoot.appendChild(thFoot1);
+        trFoot.appendChild(thFoot2);
+        trFoot.appendChild(thFoot3);
+        trFoot.appendChild(thFoot4);
+        trFoot.appendChild(thFoot5);
 
     })
 }
